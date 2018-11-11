@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"  href="main.css"/>
+    <link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="jquery-1.10.2.min.js"></script>
+    
+
+</head>
+<body>
+    
+        
+     
+         
+    <div id="mainLine">
+        <header>
+            <h1 id="title">Cirriculum Vitae</h1>
+        </header>
+            
+                 <div class="topage1"><p>My name is <b>Hakki Suman</b>.I am well orginised and qualified teacher 
+                    with a number of years
+                    teaching experience behind me.I have passion about programming language,
+                     grasp of multiple technologies and attention to detail.</p>
+                 </div>
+                <div class="topage2">
+                    <ul>
+                    <li>    
+                            <ion-icon name="call" size="small"></ion-icon>
+                            +4571618772</li>
+                    <li>
+                            <ion-icon name="mail" size="small"></ion-icon>
+                            www.arlagozlum@gmail.com
+                    </li>
+                    <li>
+                            
+                            <ion-icon name="logo-github" size="small"></ion-icon>
+                            https://github.com/arcevit
+                    </li>
+                    <li>
+                            <ion-icon name="logo-linkedin" size="small"></ion-icon>
+                            https://www.linkedin.com/in/hakki-suman-683838170/
+                    </li>
+                    </ul>
+
+
+                </div>
+            
+            <div id="line"> <img id="myFoto" src="https://media.licdn.com/dms/image/C4D03AQG6sjGZYuyfkg/profile-displayphoto-shrink_100_100/0?e=1547078400&v=beta&t=kGRiJCsMQFB1iR9SbMBoib17YR-7WKbujwoJmW-YVE0">
+        </div>
+        <div class="headerTitle">Programming Skills</div>
+        <div id="circularBarBody" >
+            <div class="circularBody">
+                <canvas height="170" width="170" id="counter"></canvas>
+                <div class="fontp" >UFT/QTP</div>
+                
+            </div>
+
+            <div class="circularBody">
+                    
+                    <canvas height="170" width="170" id="counter1"></canvas>
+                    <div class="fontp">JavaScript</div>
+
+
+                    
+                </div>
+                <div class="circularBody">
+                    
+                        <canvas height="170" width="170" id="counter2"></canvas>
+                        <div class="fontp">C#</div>
+                  </div>
+                
+
+               
+
+         </div>
+           
+        <div class="container">
+
+
+        
+            <div class="headerTitle">Education</div>
+               <span class="timeTitle">November  2018  - ... Copenhagen,Denmark </span>
+               <div class="content">
+                  <h1> Hack Your Future</h1>
+                  <p> Currently studying JavaScript,HTML,
+                    CSS, Node, Angular, Express and Databasing in MySQL.<br>
+                    <br>
+                    https://hackyourfuture.dk
+                  </p>
+                </div>
+                <span class="timeTitle">August 2017-February 2018 (U.S.A Online Course)</span>
+
+                <div class="content">
+                    <h1> CyberTek School</h1>
+                    <p>studied Automation Tester by using UFT/QTP programming in CyberTek School.<br><br>
+
+                        https://cybertekschool.com
+                          
+                    </p>
+                </div>
+                <span class="timeTitle">September 2002-January 2008,Bolu/Turkey</span>
+ 
+                <div class="content">
+                            <h1> Abant Izzet Baysal University</h1>
+                            <p>Bachelor of Science Mathematics
+                                    Abbant Izzet Baysal University
+                                    Bolu/Turkey <br><br>
+                                    http://ibu.edu.tr/en
+                                </p>
+                </div>
+
+    
+        </div>      
+
+
+        <div class="container">
+                <div class="headerTitle">Experience</div>
+                   <span class="timeTitle">September  2012- December 2016, Pakistan </span>
+                   <div class="content">
+                      <h1> Maths Teacher & Vice Principal</h1>
+                      <p> mostly maintaining high education standards,conducting teacher evaluations,
+                           guiding school employees
+                            PakTurk School&Colleges Pakistan.<br>
+                        <br>
+                        https://pakturk.edu.pk
+                      </p>
+                    </div>
+                    <span class="timeTitle"> 2008-February 2012-August 2012,Istanbul/Turkey </span>
+    
+                    <div class="content">
+                        <h1> Maths Teacher</h1>
+                        <p>taught Maths student level 6 to 10 Anafen School in Istanbul/Turkey</p>
+                              
+                        </p>
+                    </div>
+                   
+            </div>   
+
+            <div class="headerTitle">Languages</div>
+        
+            <div class="center">
+                <h1>Turkish</h1>
+                <div class="barBox">
+                    <p>100%</p>
+                    <div class="percentageBar">
+                        <div class="percentageLevel" style="width:100%"></div> 
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="center">
+                <h1>English</h1>
+                <div class="barBox">
+                    <p>85%</p>
+                    <div class="percentageBar">
+                        <div class="percentageLevel" style="width:85%"></div> 
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="center">
+                <h1>Danish</h1>
+                <div class="barBox">
+                    <p>15%</p>
+                    <div class="percentageBar">
+                        <div class="percentageLevel" style="width:15%"></div> 
+                        
+                    </div>
+                </div>
+            </div>
+
+           
+
+    </div>
+    <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+  
+
+</body>
+<script type="application/javascript">
+//.................................................................................
+
+
+    var counter=document.getElementById('counter').getContext('2d');
+    var no=0; //start point
+    var pointToFill=4.72;  //point to where you will start to draw a circular or to  fill circular 
+    var cw=counter.canvas.width;  // return counter width
+    var ch=counter.canvas.height; //return canvas height
+     var diff;//find different value between current(no) and targetted value(100)
+
+    function fillCounter()
+    {
+
+        diff=((no/100)*Math.PI*20);
+
+        counter.clearRect(0,0,cw,ch);  //clear canvas every time when function is call
+        counter.lineWidth=15;  //size of stroke
+        counter.fillStyle='#1C87B9';  // color of counter text which is located middle of circle where you want to fill in it
+        counter.strokeStyle='#1C87B9';
+        counter.textAlign='center';
+        counter.font="30px fantasy";
+        counter.fillText(no+'%',100,110);  //fillText  text(text,x,y)
+        counter.beginPath();
+        counter.arc(100,100,50,pointToFill,diff/10+pointToFill);  // arc(x,y,radius,start,stop)
+
+        counter.stroke();  // to fill stroke
+        //lets add condition
+
+        if(no >= 60)
+        {
+            clearTimeout(fill);
+         }
+            no++;
+             //fill is a variable that call the function fillCounter
+       
+
+    }
+     //lets call the function
+
+   var fill=setInterval(fillCounter,30);  //this call help us to call function every after 50Ms
+
+   //...........................................................................
+
+
+    var counter1=document.getElementById('counter1').getContext('2d');
+    var no1=0; //start point
+    var pointToFill1=4.72;  //point to where you will start to draw a circular or to  fill circular 
+    var cw1=counter1.canvas.width;  // return counter width
+    var ch1=counter1.canvas.height; //return canvas height
+     var diff1;//find different value between current(no) and targetted value(100)
+
+    function fillCounter1()
+    {
+
+        diff1=((no1/100)*Math.PI*20);
+
+        counter1.clearRect(0,0,cw1,ch1);  //clear canvas every time when function is call
+        counter1.lineWidth=15;  //size of stroke
+        counter1.fillStyle='#1C87B9';  // color of counter text which is located middle of circle where you want to fill in it
+        counter1.strokeStyle='#1C87B9';
+        counter1.textAlign='center';
+        counter1.font="30px fantasy";
+        counter1.fillText(no1+'%',100,110);  //fillText  text(text,x,y)
+        counter1.beginPath();
+        counter1.arc(100,100,50,pointToFill1,diff1/10+pointToFill1);  // arc(x,y,radius,start,stop)
+
+        counter1.stroke();  // to fill stroke
+        //lets add condition
+
+        if(no1 >= 40)
+        {
+            clearTimeout(fill1);
+         }
+            no1++;
+             //fill is a variable that call the function fillCounter
+       
+
+    }
+     //lets call the function
+
+   var fill1=setInterval(fillCounter1,30);  //this call help us to call function every after 50Ms
+
+   //............................................................................................
+
+    var counter2=document.getElementById('counter2').getContext('2d');
+    var no2=0; //start point
+    var pointToFill2=4.72;  //point to where you will start to draw a circular or to  fill circular 
+    var cw2=counter2.canvas.width;  // return counter width
+    var ch2=counter2.canvas.height; //return canvas height
+     var diff2;//find different value between current(no) and targetted value(100)
+
+    function fillCounter2()
+    {
+
+        diff2=((no2/100)*Math.PI*20);
+
+        counter2.clearRect(0,0,cw2,ch2);  //clear canvas every time when function is call
+        counter2.lineWidth=15;  //size of stroke
+        counter2.fillStyle='#1C87B9';  // color of counter text which is located middle of circle where you want to fill in it
+        counter2.strokeStyle='#1C87B9';
+        counter2.textAlign='center';
+        counter2.font="30px fantasy";
+        counter2.fillText(no2+'%',100,110);  //fillText  text(text,x,y)
+        counter2.beginPath();
+        counter2.arc(100,100,50,pointToFill2,diff2/10+pointToFill2);  // arc(x,y,radius,start,stop)
+
+        counter2.stroke();  // to fill stroke
+        //lets add condition
+
+        if(no2 >= 40)
+        {
+            clearTimeout(fill2);
+         }
+            no2++;
+             //fill is a variable that call the function fillCounter
+       
+
+    }
+     //lets call the function
+
+   var fill2=setInterval(fillCounter2,30);  //this call help us to call function every after 50
+
+   
+
+ </script>
+</html>

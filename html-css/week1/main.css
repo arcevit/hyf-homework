@@ -1,0 +1,250 @@
+
+#mainLine{
+  width: 1000px;
+  height: auto;
+  margin: 2px 250px 0 250px;
+  float: left;
+}
+
+
+
+#title{
+
+  color: blue; 
+   
+  text-align: center;
+  font-size: 40px;
+  padding-top: 4px;
+  margin: 5px auto;
+}
+
+.topage1{
+  
+    width: 490px;
+    height: 190px;
+    float: left;
+    margin: 5px 10px 0 0 ;
+
+}
+
+.topage2{
+  
+  width: 490px;
+  height: 190px;
+  float: right;
+  margin: 5px 0px 0 0 ;
+
+}
+
+ul {
+  list-style-type: none;
+
+}
+#line{
+ 
+  margin: 0 0 45px 0;
+  width: 1000px;
+  height:7px;
+  border-radius: 8px;
+  float: left;
+  transform: rotate(-2deg);
+  background-color: beige;
+  animation-name: line;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+@keyframes line{
+  10%{background-color: azure;}
+  20%{background-color: rgb(36, 127, 207);}
+  30%{background-color: rgb(146, 46, 133);}
+  40%{background-color: rgb(150, 41, 59);}
+  50%{background-color: rgb(223, 219, 5);}
+  60%{background-color: rgb(71, 161, 19);}
+  70%{background-color: rgb(10, 55, 122);}
+  80%{background-color: rgb(198, 240, 12);}
+  90%{background-color: rgb(138, 8, 51);}
+  100%{background-color: rgb(8, 185, 38);}
+
+}
+
+
+#myFoto {
+   border-radius: 50%;
+   margin:-50px 0 0 450px;
+}
+
+body * {
+  font-size: 19px;
+}
+
+
+.container{
+
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.container::before{
+content: '';
+width: 5px;
+height: 100%;
+border-radius: 5px;
+background-color: #eef1ed;
+position: absolute;
+left: 20px;
+top:39px;
+}
+
+.content{
+  background-color: rgb(246, 247, 234);
+  padding: 10px;
+  margin:20px 0 20px 30px;
+  border-radius: 18px;
+  position: relative;
+}
+
+
+
+.content::after{
+  content:'';
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(242, 245, 245);
+  position: absolute;
+  left:-39px;
+  transform: translatey(-50%) ;
+  border: 0.5px solid;
+  top:-25px;
+
+
+}
+.headerTitle{
+  font-size: 35px;
+  margin: 0 0 0 90px;
+}
+
+.timeTitle{
+  font-size: 17px;
+  margin: 50px 0 0 30px;
+  
+}
+
+
+.content h1{
+  font-size: 28px;
+}
+
+.center{
+  width:200px;
+  height: 100px;
+margin: 40px 40px 40px 40px;
+float: left;
+  
+  position: relative;
+  background:white;
+  box-sizing: border-box;
+  box-shadow: 0 20px 60px rgba(0 0 0 0.5px);
+  border-radius: 10px;
+}
+
+.center h1{
+  letter-spacing: 5px;
+  color:black;
+}
+.barBox p{
+  color:black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  
+  margin:0 0 0 150px;
+}
+
+.percentageBar{
+  background: #262626;
+  box-sizing: border-box;
+  padding: 4px;
+  border: 1px solid #0fffb7;
+  border-radius: 6px;
+}
+.percentageLevel{
+  background: #0fff67;
+  width:100%;
+  height: 10px;
+  border-radius: 6px;
+
+}
+
+#counter{
+  background-color:white;
+  position: relative;
+  margin:1px auto;
+  
+  
+}
+
+#counter1{
+  background-color:white;
+  position: relative;
+  margin:1px auto;
+}
+
+#counter2{
+  background-color:white;
+  position: relative;
+  margin:1px auto;
+}
+
+#circularBarBody{
+  width:950px;
+  height: 200px;
+ 
+}
+
+.circularBody{
+  width:300px;
+  height: 200px;
+  float: left;
+  float:top;
+  box-sizing: border-box;
+  text-align: center;
+  font: bold;
+  font-size: 25px monospace;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
