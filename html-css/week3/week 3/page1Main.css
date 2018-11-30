@@ -1,0 +1,146 @@
+body{
+    box-sizing: border-box;
+}
+
+
+.MainBody{
+    max-width: 950px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.headerLeft{
+    width:25%;
+    height: auto;
+    
+}
+.headerRight{
+    display: flex;
+    width:70%;
+    height: 90%;
+    justify-content: space-evenly;
+   
+}
+.headerRight li{
+    width: 30%;
+
+    list-style-type: none;
+    margin:10px;
+    border:2px solid whitesmoke;
+    border-radius: 7px;
+    justify-content: space-evenly;
+}
+.headerRight a{
+    text-decoration: none;
+}
+
+.li1{
+    background-color:red;
+    
+    
+    
+}
+.li1 a{
+    color: white;
+} 
+    
+
+
+.algn{
+    display: flex;
+
+}
+    
+.profilebox{
+    display: flex;
+}
+
+
+.profileboxLeft{
+    width:20%;
+    height: auto;
+    justify-content: left;
+    margin-right:1%;
+    
+}
+
+.profileboxRight{
+    width:80%;
+    height: auto;
+    justify-content:left;
+    
+}
+
+.subHeader{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.progressTitle{
+    margin-left: 6%;
+}
+
+.progressBar{
+    width: 95%;
+    height: 24px;
+    background-color:#bbb;
+    border-radius: 13px;
+    padding: 3px;
+    margin:1px auto;   
+}
+.progress{
+    width:20%;
+    height: 23px;
+    border-radius: 10px;
+    background-color: dodgerblue; 
+}
+
+.profilebox{
+    display: flex;
+}
+
+
+.profileboxLeft{
+    width:20%;
+    height: auto;
+    justify-content: left;
+    margin-right:1%;
+    
+}
+
+.profileboxRight{
+    width:80%;
+    height: auto;
+    justify-content:left;
+    
+}
+.nextbutton{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6%;
+
+}
+
+.headerClass{
+    display: flex;
+}
+
+.headerLeft{
+  justify-content: flex-start;
+}
+.headerRight{
+    justify-content: flex-end;
+}
+
+.nextbutton input{
+    width: 150px;
+    height: 60px;
+}
