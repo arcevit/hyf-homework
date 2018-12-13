@@ -38,7 +38,7 @@ function threeObjectFunc()
     let myArray=[{},{},{}];
     //  3) Change the array so that all the objects have one key called color. Make every object have a different color
     for (let i = 0; i < myArray.length; i++) {
-        colours=["red","blue","yellow"];
+        let colours=["red","blue","yellow"];
           myArray[i].color=colours[i];
         
     }
