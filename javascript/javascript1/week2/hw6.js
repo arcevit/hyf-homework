@@ -55,8 +55,9 @@ console.log(colorObjects);
 function threeObjectFunction(color1,color2,color3)
 {
     let myArray=[{},{},{}];
+    let colours;                                     // corrected and defined outside of loop and 
     for (let i = 0; i < myArray.length; i++) {
-        colours=[color1,color2,color3];
+        colours=[color1,color2,color3]; 
           myArray[i].color=colours[i];
         
     }   
@@ -73,22 +74,23 @@ function callDay(days)
     let meetingDay =days%7;
     return meetingDay;
 }
-var d = new Date();
-var n = d.getDay();
+var date1 = new Date();
+var nday= date1.getDay();
+let nt=(nday+callDay(6))%7;   //<-------by help of % operator previous mistake corrected .i hope :)  -------->
 weekdays=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
-
 console.log(" -----------------------output 4------------");
-console.log("today is : "+weekdays[n]);
-console.log("How many days to meet :"+17);
-console.log("We are meeting on : "+ weekdays[n+callDay(17)]);
+console.log("today is : "+weekdays[nday]);
+console.log("How many days to meet :"+6);
+console.log("We are meeting on : "+ weekdays[nt]);
 
 
 //********************************************************************************************************************/
 
 //create a function with two parameters assign empty array and push object into array with two keys which corresponds the function parameters.
+let notes=[];  //   <----------corrected------->
+
 function addNote(note,noteId)
 {    
-    let notes=[];
     let myObject={note:note,noteId:noteId};
    notes.push(myObject);
    return notes;
@@ -145,7 +147,6 @@ console.log(showAllNotes());
 
 
 
-
 //********************************************************************** */
 
 
@@ -177,18 +178,21 @@ console.log(" -----------------------output 8------------");
  addActivity(currentDay,"instagram",150);
 
 
-let dizin=0;
+
+
+// showStatus Function specify current current day , total time spend 
+
+function showStatus()
+
+{  //<-----for loop shifted inside of the function ; corrected------>
+    let dizin=0;
+
 for (let i = 0; i < activities.length; i++) {
    
     dizin =activities[i].duration+dizin;
     
     
-}
-
-// showStatus Function specify current current day , total time spend 
-function showStatus()
-
-{   
+} 
     if (activities==0) {
         return "today is "+currentDay+"add some some activity";
     }
@@ -223,7 +227,7 @@ console.log(showStatus());
 
 
 
-
+//   4 +3  sonuc 7 
 
 
 
