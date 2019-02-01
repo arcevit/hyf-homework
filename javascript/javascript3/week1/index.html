@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>Ajax Kullanımı</title>
+</head>
+<body>
+ 
+<div class="testimonials">
+        <div class="inner">
+                <h1>Weather</h1>
+                <div class="border"></div>
+                <form id = "todo-form" name="form">
+        City: <input type="text" id="city-input" value="">
+                <button id="city-button">Submit</button>
+
+            </form>
+        <div class="row">
+                <div class="col">
+                    <div class="testimonial">
+                        <div id="map-div"></div>
+                        <div class="name"></div>
+                        <div class="stars">
+                            <p class="lat"></p>
+                            <hr>
+                            <p class="log"></p>
+                            
+                        </div>
+                   
+                   
+                </div>
+            </div>
+
+          
+                    <div class="col">
+                        <div class="testimonial">
+                            <img src="a.jpg" alt="" class="src">
+
+                            <div class="name">Main</div>
+                            <div class="stars">
+                                <p class="humidity"></p>
+                                <hr>
+                                <p class="temp"></p>
+                                <hr>
+                                <p class="temp-max"></p>
+                                <hr>
+                                <p class="temp-min"></p>
+                                <hr>
+                                <p class="wind-speed"></p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+               
+         
+                    <div class="col">
+                        <div class="testimonial">
+                            <img  src=""  id="weather-img">
+                            <div class="name">Weather</div>
+                            <div class="stars">
+                                <p class="country"></p>
+                                <hr>
+                                <p class="description"></p>
+                                <hr>
+                                <p class="description-n"></p>
+                               
+                            </div>                       
+                    </div>
+                </div>
+         </div>
+           <button id="forecast">Find Current Location Forecast</button>
+       </div>
+       <hr>
+       <ul class="list-group">
+        <!-- will generate li tags to list
+            -->
+       </ul>
+       <hr>
+
+</div>
+
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAynpWHW9KjsXDUgp2K6elOTaSaxw6WXio&callback=loadMap"
+       ></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
