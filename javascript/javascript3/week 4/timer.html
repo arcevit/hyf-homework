@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="startTimer.css">
+    <title>Timer Page</title>
+</head>
+<body>
+
+  
+<section class="intro">
+    <div class="inner">
+        <div class="content">
+            <script type="text/javascript">
+    function countDown(seconds){
+    let element=document.getElementById('status');
+    element.innerHTML="<h2>Please wait for </h2>"+seconds+"<h4>seconds</h4>";
+    if(seconds<1){
+        clearTimeout(timer);
+        element.innerHTML='<br><br><br><h1 style="color:white">Test is Loading...</h1>'
+        element.innerHTML+='<a href="main.html" class="start-quiz">Start Test</a>';
+
+    }
+    seconds --;
+    console.log("saniye",seconds)
+    var timer=setTimeout(function(){
+        countDown(seconds);
+    },1000)
+    console.log(timer)
+}
+                               
+        </script>
+        <div id="status"> </div>
+        <script type="text/javascript">countDown(3);</script>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
