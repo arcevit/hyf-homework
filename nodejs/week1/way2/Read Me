@@ -1,0 +1,46 @@
+READ ME
+
+1)express module has been used 
+it is recommended to install express module to your file or globally
+
+2)due to lack of User Interface we will be use browser url to make required steps
+
+------------------------------
+for add new student
+
+we have to browse  http://localhost:8000/add
+for adding new student
+
+http://localhost:8000/add?name=Kerry&class=4&email=kerry@hotmail.com&phone=02343434
+ name,class,email and phone values should change for adding  a new student
+
+-----------------------------------
+
+for search a student by name
+http://localhost:8000/search?name=Kerry
+
+---------------------------------------
+for filter required class 
+
+http://localhost:8000/filter?class=4
+
+
+--------------------------
+for edit a student by selecting student`s name
+
+use browser 
+http://localhost:8000/edit?name=Kerry&class=4&email=kerry@hotmail.com&phone=02343434
+
+name,class,email and phone values should be changed for editing  a selected student
+
+------------------------------------------------------------
+for delete a student by selecting student`s name
+
+use browser 
+http://localhost:8000/delete?name=Kerry
+
+can be deleted by selecting student name
+
+all result will be displayed UI as a json mode
+
+
