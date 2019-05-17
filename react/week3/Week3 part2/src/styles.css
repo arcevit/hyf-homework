@@ -1,0 +1,13 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .my-slider {
+    background: lightblue;
+  }
+  
+  .item--checked {
+    text-decoration: line-through;
+  }
+  
