@@ -19,7 +19,7 @@ class List extends React.Component {
           {items.length > 0 ? (
             items.map(item => <Item item={item} deleteItem={deleteItem} />)
           ) : (
-            <div> No item left</div>
+            <div> No User Found</div>
           )}
         </tbody>
       </table>
