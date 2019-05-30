@@ -12,6 +12,7 @@
 img {
   width: 30px;
   height: 30px;
+  border-radius: 7px;
 }
 table{
   border:0.7px solid #f2f2f2;
