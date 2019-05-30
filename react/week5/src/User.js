@@ -16,7 +16,7 @@ class User extends Component {
   render() {
     
     const { user } = this.state;
-    console.log('bu user ha:',user)
+    
     const post = user ? (
       <UserProfile user={user} />
     ) : (
